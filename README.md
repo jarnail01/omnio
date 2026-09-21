@@ -19,6 +19,21 @@ Deadline: January 18, 2027. Target shuttle: March 2027 CMOS5L.
 |`JMP`|Jump to a program address|
 |`HALT`|Stop execution until reset|
 
+### Example: UART Transmission
+This program transmits 0x96 on pin 0 using an 8N1 frame: one start bit, eight data bits sent LSB first, and one stop bit.
+```
+SET 1
+OE 1 [15]
+LDI 0x96
+LDX 8
+SET 0 [15]
+bit:
+  OUT 0 [14]
+  DJNZ bit
+SET 1 [15]
+HALT
+```
+
 ## 🌟 Highlights
 - s
 
