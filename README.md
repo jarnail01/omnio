@@ -1,6 +1,8 @@
 # 📦 OMNIO
 OMNIO is a programmable I/O ASIC specialized for emulating digital protocols such as SPI, I2C, UART, and custom interfaces. Similar to the PIO state machines on the RP2040, it contains a small CPU with an instruction set designed for reading/writing pins and counting cycles with precise enough timing that a real protocol can be implemented in firmware rather than a fixed block of logic.
 
+Before fabrication, the complete design can be synthesized onto an FPGA for testing.
+
 This project is being developed for the [Jane Street Protocol Emulator ASIC Competition](https://blog.janestreet.com/protocol-emulator-asic-competition/), targeting Tiny Tapeout on IHP's 130 nm CMOS5L process.
 
 Deadline: January 18, 2027. Target shuttle: March 2027 CMOS5L.
