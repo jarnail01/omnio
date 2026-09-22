@@ -7,6 +7,13 @@ This project is being developed for the [Jane Street Protocol Emulator ASIC Comp
 
 Deadline: January 18, 2027. Target shuttle: March 2027 CMOS5L.
 
+## 🌟 Highlights
+- Custom 16-bit instruction set
+- Reprogrammable for protocol support
+- Fractional clock-enable generation for configurable instruction rates
+- Modular architecture for independent verification and extension
+
+
 ## 📄 Instruction Set
 |Instruction|Operation|
 |-----------|----------------------------------|
@@ -35,9 +42,6 @@ bit:
 SET 1 [15]
 HALT
 ```
-
-## 🌟 Highlights
-- s
 
 ## ℹ️ Overview
 A paragraph explaining your work, who you are, and why you made it.
