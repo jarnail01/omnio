@@ -1,13 +1,11 @@
 # ✨ OMNIO
-OMNIO is a programmable I/O ASIC specialized for emulating digital protocols such as SPI, I2C, UART, and custom interfaces. Similar to the PIO state machines on the RP2040, it contains a small CPU with an instruction set designed for reading/writing pins and counting cycles with precise enough timing that a real protocol can be implemented in firmware rather than a fixed block of logic.
+OMNIO is a programmable I/O ASIC specialized for emulating digital protocols such as SPI, I2C, UART, and custom interfaces. Similar to the PIO state machines on the RP2040, it contains four small cores with an instruction set designed for reading/writing pins and counting cycles with precise enough timing that a real protocol can be implemented in firmware rather than a fixed block of logic.
 
 The current microarchitecture plan (subject to change):
 - 4 independent cores
 - a shared memory array (at least 32x16 bits)
 - input/output FIFOs
-- clock divider for slower protocols like UART
-
-Before fabrication, the complete design can be synthesized onto an FPGA for testing.
+- fractional clock divider for slower protocols like UART
 
 This project is being developed for the [Jane Street Protocol Emulator ASIC Competition](https://blog.janestreet.com/protocol-emulator-asic-competition/), targeting Tiny Tapeout on IHP's 130 nm CMOS5L process.
 
@@ -47,6 +45,9 @@ bit:
 SET 1 [15]
 HALT
 ```
+
+## ✔️ Verification and Testing
+Before fabrication, the complete design can be synthesized onto an FPGA for testing.
 
 ### ✍️ Authors
 Jarnail Sanghera
