@@ -1,0 +1,43 @@
+<mxfile host="app.diagrams.net">
+  <diagram name="Page-1" id="hR5ITPtsqEnUV9kKDeQF">
+    <mxGraphModel dx="1933" dy="2825" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="3840" pageHeight="2160" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="2aEboyMJTb-iZBS_lSiz-1" parent="1" style="rounded=0;whiteSpace=wrap;html=1;spacingTop=35;verticalAlign=top;fontSize=28;fontFamily=Tahoma;" value="PC" vertex="1">
+          <mxGeometry height="240" width="160" x="200" y="360" as="geometry" />
+        </mxCell>
+        <mxCell id="2aEboyMJTb-iZBS_lSiz-2" parent="1" style="rounded=0;whiteSpace=wrap;html=1;spacingTop=35;verticalAlign=top;fontSize=28;fontFamily=Tahoma;" value="IMEM" vertex="1">
+          <mxGeometry height="240" width="160" x="480" y="360" as="geometry" />
+        </mxCell>
+        <mxCell id="2aEboyMJTb-iZBS_lSiz-3" parent="1" style="rounded=0;whiteSpace=wrap;html=1;spacingTop=35;verticalAlign=top;fontSize=28;fontFamily=Tahoma;" value="CU_DCDR" vertex="1">
+          <mxGeometry height="240" width="160" x="880" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="2aEboyMJTb-iZBS_lSiz-4" parent="1" style="rounded=0;whiteSpace=wrap;html=1;spacingTop=35;verticalAlign=top;fontSize=28;fontFamily=Tahoma;" value="DELAY" vertex="1">
+          <mxGeometry height="240" width="160" x="880" y="320" as="geometry" />
+        </mxCell>
+        <mxCell id="2aEboyMJTb-iZBS_lSiz-6" parent="1" style="rounded=0;whiteSpace=wrap;html=1;spacingTop=35;verticalAlign=top;fontSize=28;fontFamily=Tahoma;" value="INPUT_SYNC" vertex="1">
+          <mxGeometry height="240" width="210" x="1280" y="530" as="geometry" />
+        </mxCell>
+        <mxCell id="2aEboyMJTb-iZBS_lSiz-7" parent="1" style="rounded=0;whiteSpace=wrap;html=1;spacingTop=35;verticalAlign=top;fontSize=28;fontFamily=Tahoma;" value="CLK_DIV" vertex="1">
+          <mxGeometry height="110" width="160" x="200" y="80" as="geometry" />
+        </mxCell>
+        <mxCell id="2aEboyMJTb-iZBS_lSiz-9" parent="1" style="rounded=0;whiteSpace=wrap;html=1;spacingTop=35;verticalAlign=top;fontSize=28;fontFamily=Tahoma;" value="OE_REG" vertex="1">
+          <mxGeometry height="240" width="160" x="1290" y="820" as="geometry" />
+        </mxCell>
+        <mxCell id="2aEboyMJTb-iZBS_lSiz-10" parent="1" style="rounded=0;whiteSpace=wrap;html=1;spacingTop=35;verticalAlign=top;fontSize=28;fontFamily=Tahoma;" value="O_REG" vertex="1">
+          <mxGeometry height="240" width="160" x="1290" y="1090" as="geometry" />
+        </mxCell>
+        <mxCell id="2aEboyMJTb-iZBS_lSiz-11" parent="1" style="rounded=0;whiteSpace=wrap;html=1;spacingTop=35;verticalAlign=top;fontSize=28;fontFamily=Tahoma;" value="RX_REG" vertex="1">
+          <mxGeometry height="240" width="160" x="1290" y="260" as="geometry" />
+        </mxCell>
+        <mxCell id="2aEboyMJTb-iZBS_lSiz-12" parent="1" style="rounded=0;whiteSpace=wrap;html=1;spacingTop=35;verticalAlign=top;fontSize=28;fontFamily=Tahoma;" value="S_REG" vertex="1">
+          <mxGeometry height="120" width="160" x="390" y="780" as="geometry" />
+        </mxCell>
+        <mxCell id="2aEboyMJTb-iZBS_lSiz-13" parent="1" style="rounded=0;whiteSpace=wrap;html=1;spacingTop=35;verticalAlign=top;fontSize=28;fontFamily=Tahoma;" value="X_REG" vertex="1">
+          <mxGeometry height="120" width="160" x="390" y="920" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
