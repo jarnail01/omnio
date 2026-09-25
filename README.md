@@ -1,5 +1,11 @@
-# 📦 OMNIO
+# ✨ OMNIO
 OMNIO is a programmable I/O ASIC specialized for emulating digital protocols such as SPI, I2C, UART, and custom interfaces. Similar to the PIO state machines on the RP2040, it contains a small CPU with an instruction set designed for reading/writing pins and counting cycles with precise enough timing that a real protocol can be implemented in firmware rather than a fixed block of logic.
+
+The current microarchitecture plan (subject to change):
+- 4 independent cores
+- a shared memory array (at least 32x16 bits)
+- input/output FIFOs
+- clock divider for slower protocols like UART
 
 Before fabrication, the complete design can be synthesized onto an FPGA for testing.
 
@@ -12,7 +18,6 @@ Deadline: January 18, 2027. Target shuttle: March 2027 CMOS5L.
 - Reprogrammable for protocol support
 - Fractional clock-enable generation for configurable instruction rates
 - Modular architecture for independent verification and extension
-
 
 ## 📄 Instruction Set
 |Instruction|Operation|
@@ -43,8 +48,6 @@ SET 1 [15]
 HALT
 ```
 
-## ℹ️ Overview
-A paragraph explaining your work, who you are, and why you made it.
-
 ### ✍️ Authors
-Mention who you are and link to your GitHub or organization's website.
+Jarnail Sanghera
+www.jarnailsanghera.com
