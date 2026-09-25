@@ -12,7 +12,7 @@ This project is being developed for the [Jane Street Protocol Emulator ASIC Comp
 Deadline: January 18, 2027. Target shuttle: March 2027 CMOS5L.
 
 ## 🌟 Repository Structure
-- `rtl`: Verilog source modules, including `PROTOCOL_TOP.v`
+- `rtl`: Verilog source modules, including [`PROTOCOL_TOP.v`](rtl/PROTOCOL_TOP.v)
 - `tools`: Python assembler
 - `docs/decisions`: architecture decision records
 - `tests`: SystemVerilog testbenches and Python assembler tests
