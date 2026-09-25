@@ -7,6 +7,11 @@ The current microarchitecture plan (subject to change):
 - input/output FIFOs
 - fractional clock divider for slower protocols like UART
 
+The goal is to at least support the following protocols:
+- UART, SPI, and I2C
+- low-speed USB
+- 10Mbit Ethernet
+
 This project is being developed for the [Jane Street Protocol Emulator ASIC Competition](https://blog.janestreet.com/protocol-emulator-asic-competition/), targeting Tiny Tapeout on IHP's 130 nm CMOS5L process.
 
 Deadline: January 18, 2027. Target shuttle: March 2027 CMOS5L.
@@ -49,7 +54,7 @@ HALT
 ```
 
 ## ✔️ Verification and Testing
-Before fabrication, the complete design can be synthesized onto an FPGA for testing.
+An FPGA is being used to test the RTL before the ASIC flow. Currently exploring formal methods, random constrained tests, and AI-assisted verification.
 
 ### ✍️ Authors
 Jarnail Sanghera https://www.jarnailsanghera.com
