@@ -11,11 +11,9 @@ This project is being developed for the [Jane Street Protocol Emulator ASIC Comp
 
 Deadline: January 18, 2027. Target shuttle: March 2027 CMOS5L.
 
-## 🌟 Highlights
-- Custom 16-bit instruction set
-- Reprogrammable for protocol support
-- Fractional clock-enable generation for configurable instruction rates
-- Modular architecture for independent verification and extension
+## 🌟 Repository Structure
+- `rtl`: verilog project files
+- `tools`: python assembler
 
 ## 📄 Instruction Set
 |Instruction|Operation|
@@ -50,8 +48,5 @@ HALT
 Before fabrication, the complete design can be synthesized onto an FPGA for testing.
 
 ### ✍️ Authors
-Jarnail Sanghera
-
-https://www.jarnailsanghera.com
-
-https://www.linkedin.com/in/jarnail-sanghera/
+Jarnail Sanghera `https://www.jarnailsanghera.com`
+`https://www.linkedin.com/in/jarnail-sanghera/`
