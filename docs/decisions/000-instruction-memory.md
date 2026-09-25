@@ -2,7 +2,7 @@
 
 ## Context and Problem Statement
 
-Need to choose a storage for a small programmable instruction memory.
+Need to decide on storage for a small programmable instruction memory. Timing is critical and clock rate is limited by [Tiny Tapeout's specifications](https://tinytapeout.com/specs/clock/) to about 66 MHz at the time of writing (9/25/2026).
 
 ### Non-Negotiables
 1. Each of the four cores must be able to asynchronously read from memory.
