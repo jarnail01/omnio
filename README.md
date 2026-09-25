@@ -51,5 +51,7 @@ Before fabrication, the complete design can be synthesized onto an FPGA for test
 
 ### ✍️ Authors
 Jarnail Sanghera
+
 https://www.jarnailsanghera.com
+
 https://www.linkedin.com/in/jarnail-sanghera/
