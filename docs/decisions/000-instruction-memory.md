@@ -26,7 +26,3 @@ Chosen option: "{title of option 1}", because {justification. e.g., only option,
 
 * Good, because {positive consequence, e.g., improvement of one or more desired qualities, …}
 * Bad, because {negative consequence, e.g., compromising one or more desired qualities, …}
-
-### Power, Performance, Area
-| Maximum Clock Frequency (Tiny Tapeout) | 66 MHz |
-| Nominal Tile Area | 0.7 $mm^2$ |
