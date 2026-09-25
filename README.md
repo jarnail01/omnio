@@ -5,7 +5,7 @@ The current microarchitecture plan (subject to change):
 - 4 independent cores
 - a shared memory array (at least 32x16 bits)
 - input/output FIFOs
-- fractional clock divider for slower protocols like UART
+- fractional clock divider for slower protocols like UART with exact baud rates
 
 The goal is to at least support the following protocols:
 - UART, SPI, and I2C
