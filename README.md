@@ -14,6 +14,7 @@ Deadline: January 18, 2027. Target shuttle: March 2027 CMOS5L.
 ## 🌟 Repository Structure
 - `rtl`: verilog source files
 - `tools`: python assembler
+- `adr`: architecture decision records
 
 ## 📄 Instruction Set
 |Instruction|Operation|
