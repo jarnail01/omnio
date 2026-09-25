@@ -14,8 +14,8 @@ Need to decide on storage for a small programmable instruction memory. Timing is
 | Option | Benefits | Disadvantages / risks | Meets hard requirements? |
 | --- | --- | --- | --- |
 | Flop array + 4 read multiplexers | Easy to implement | High power - clock and mux switching. High area. | Unknown, measure power and area |
-| Single SRAM macro | Low area, low power | Single read port, need to arbitrate, each core gets 1/4 of max clock rate | No |
-| Replicated SRAM macro | More throughput than single SRAM | High area, high power | Unknown, possible if macros exist |
+| Single SRAM macro | Low area, low power | Single read port, need to arbitrate, each core gets 1/4 of max clock rate, poor performance | No |
+| Replicated SRAM macro | More throughput than single SRAM | High area, high power | Unknown |
 | Banked SRAM | | | |
 
 ## Decision Outcome
@@ -26,3 +26,5 @@ Chosen option: "{title of option 1}", because {justification. e.g., only option,
 
 * Good, because {positive consequence, e.g., improvement of one or more desired qualities, …}
 * Bad, because {negative consequence, e.g., compromising one or more desired qualities, …}
+
+1 tile = 200 x 150 µm = 30,000 µ$m^2$
