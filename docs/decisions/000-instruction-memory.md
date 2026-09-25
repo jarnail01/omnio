@@ -6,9 +6,8 @@ Need to decide on storage for a small programmable instruction memory. Timing is
 
 ### Non-Negotiables
 1. Each of the four cores must be able to asynchronously read from memory. This means they can share subroutines/code to reduce redundancy.
-3. In order to emulate full-duplex protocols, the device needs to be able to run at least 2 programs at the same time (one for receiving data and one for transmitting data). 1 program for each of the 4 cores is the goal.
-4. Minimum capacity: 32 words x 16 bits = 512 bits of data
-5. One instruction fetch per core per clock cycle
+2. Minimum capacity: 32 words x 16 bits = 512 bits of data
+3. Avoid or mitigate performance degradation. Power and area is less critical.
 
 ## Considered Options
 
