@@ -2,12 +2,13 @@
 
 ## Context and Problem Statement
 
-Choose storage for a small programmable instruction memory.
-Need to decide what actually stores the data bits and how do modules access the data?
+Need to choose a storage for a small programmable instruction memory.
 
-1. In order to emulate full-duplex protocols, the device needs to be able to run at least 2 programs at the same time (one for receiving data and one for transmitting data). 1 program for each of the 4 cores is the goal.
-2. Target capacity: 32 words x 16 bits = 512 bits of data
-3. One instruction fetch per core per clock cycle
+### Non-Negotiables
+1. Each of the four cores must be able to asynchronously read from memory.
+2. In order to emulate full-duplex protocols, the device needs to be able to run at least 2 programs at the same time (one for receiving data and one for transmitting data). 1 program for each of the 4 cores is the goal.
+3. Target capacity: 32 words x 16 bits = 512 bits of data
+4. One instruction fetch per core per clock cycle
 
 ## Considered Options
 
