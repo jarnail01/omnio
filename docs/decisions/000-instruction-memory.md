@@ -11,29 +11,18 @@ Need to decide what actually stores the data bits and how do modules access the 
 
 ## Considered Options
 
-## 3. Options
-
-| Option                           | Benefits                      | Disadvantages / risks                                             | Meets hard requirements?           |
-| -------------------------------- | ----------------------------- | ----------------------------------------------------------------- | ---------------------------------- |
-| Flop array + 4 read multiplexers | Fast and easy to implement.   | High power - clock and mux switching. High area.                  | Unknown, measure power and area    |
-| SRAM macro                       | Low area, low power           | Single read port, would need 4 of them.                           | No                                 |
-| Replicated SRAM macro            | Each core has its own memory. | Must keep copies identical. Fixed macro sizes may waste capacity. | Unknown, possible if macros exist. |
-| Banked SRAM                      |                               |                                                                   |                                    |
-|                                  |                               |                                                                   |                                    |
-
-
-* {title of option 1}
-* {title of option 2}
-* {title of option 3}
-* … <!-- numbers of options can vary -->
+| Option | Benefits | Disadvantages / risks | Meets hard requirements? |
+| --- | --- | --- | --- |
+| Flop array + 4 read multiplexers | Easy to implement | High power - clock and mux switching. High area. | Unknown, measure power and area |
+| Single SRAM macro | Low area, low power | Single read port, need to arbitrate, each core gets 1/4 of max clock rate | No |
+| Replicated SRAM macro | More throughput than single SRAM | High area, high power | Unknown, possible if macros exist |
+| Banked SRAM | | | |
 
 ## Decision Outcome
 
 Chosen option: "{title of option 1}", because {justification. e.g., only option, which meets k.o. criterion decision driver | which resolves force {force} | … | comes out best (see below)}.
 
-<!-- This is an optional element. Feel free to remove. -->
 ### Consequences
 
 * Good, because {positive consequence, e.g., improvement of one or more desired qualities, …}
 * Bad, because {negative consequence, e.g., compromising one or more desired qualities, …}
-* … <!-- numbers of consequences can vary -->
