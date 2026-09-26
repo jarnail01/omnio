@@ -56,6 +56,16 @@ HALT
 ## ✔️ Verification and Testing
 An FPGA is being used to test the RTL before the ASIC flow. Currently exploring formal methods, random constrained tests, and AI-assisted verification.
 
+### Personal Learning Outcomes
+- Translate system requirements into hardware architecture
+- Design an instruction set based on the needs of real workloads
+- Connect ISA decisions to microarchitecture
+- Understand how hardware communication protocols can be implemented using software-controlled I/O
+- Design clean and modular Verilog RTL
+- Build a formal verification strategy
+- Make quantitative PPA tradeoffs and design under real physical constrais
+- Communicate hardware design documentation professionally (arch/timing diagrams, ISA documentation, decision documents, 
+
 ### ✍️ Authors
 Jarnail Sanghera https://www.jarnailsanghera.com
 
