@@ -56,7 +56,7 @@ HALT
 ## ✔️ Verification and Testing
 An FPGA is being used to test the RTL before the ASIC flow. Currently exploring formal methods, random constrained tests, and AI-assisted verification.
 
-## Personal Learning Outcomes
+## 🎯 Personal Learning Outcomes
 - Translate system requirements into hardware architecture
 - Design an instruction set based on the needs of real workloads
 - Connect ISA decisions to microarchitecture
