@@ -66,9 +66,8 @@ By the completion of this project, I should be able to:
 - Make quantitative PPA tradeoffs and design under real physical constraints
 - Communicate hardware design documentation professionally (arch/timing diagrams, ISA documentation, decision documents, 
 
-## ✍️ Authors
-Jarnail Sanghera
+## ✍️ Author
+**Jarnail Sanghera**
 
-https://www.jarnailsanghera.com
-
-https://www.linkedin.com/in/jarnail-sanghera/
+[Website](https://www.jarnailsanghera.com)
+[LinkedIn](https://www.linkedin.com/in/jarnail-sanghera/)
