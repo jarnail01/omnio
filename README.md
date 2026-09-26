@@ -57,16 +57,18 @@ HALT
 An FPGA is being used to test the RTL before the ASIC flow. Currently exploring formal methods, random constrained tests, and AI-assisted verification.
 
 ## 🎯 Personal Learning Outcomes
+By the completion of this project, I should be able to:
 - Translate system requirements into hardware architecture
-- Design an instruction set based on the needs of real workloads
-- Connect ISA decisions to microarchitecture
-- Understand how hardware communication protocols can be implemented using software-controlled I/O
-- Design clean and modular Verilog RTL
-- Build a formal verification strategy
-- Make quantitative PPA tradeoffs and design under real physical constrais
+- Design an instruction set based on the needs of real workloads, with both the microarchitecture and software in mind
+- Implement SPI/I2C/UART receivers and transmitters using software-controlled I/O
+- Write clean and modular Verilog RTL that others can easily understand
+- Build a formal verification strategy and verify at multiple abstraction levels (individual modules, core, and the whole ASIC)
+- Make quantitative PPA tradeoffs and design under real physical constraints
 - Communicate hardware design documentation professionally (arch/timing diagrams, ISA documentation, decision documents, 
 
 ## ✍️ Authors
-Jarnail Sanghera https://www.jarnailsanghera.com
+Jarnail Sanghera
+
+https://www.jarnailsanghera.com
 
 https://www.linkedin.com/in/jarnail-sanghera/
