@@ -70,4 +70,5 @@ By the completion of this project, I should be able to:
 **Jarnail Sanghera**
 
 [Website](https://www.jarnailsanghera.com)
+
 [LinkedIn](https://www.linkedin.com/in/jarnail-sanghera/)
