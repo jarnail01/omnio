@@ -5,6 +5,7 @@ OMNIO is a programmable I/O ASIC specialized for emulating digital protocols suc
 <div align="center">
   <em>Figure 1: OMNIO Core Block Diagram</em>
   <br>
+  <br>
 </div>
 
 The current microarchitecture plan (subject to change):
