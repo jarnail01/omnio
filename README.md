@@ -1,6 +1,11 @@
 # ✨ OMNIO
 OMNIO is a programmable I/O ASIC specialized for emulating digital protocols such as SPI, I2C, UART, and custom interfaces. Similar to the PIO state machines on the RP2040, it contains four small cores with an instruction set designed for reading/writing pins and counting cycles with precise enough timing that a real protocol can be implemented in firmware rather than a fixed block of logic.
 
+![OMNIO Core Block Diagram](docs/omnio-high-level-v2.png)
+<div align="center">
+  <em>Figure 1: OMNIO Core Block Diagram</em>
+</div>
+
 The current microarchitecture plan (subject to change):
 - 4 independent cores
 - a shared memory array (at least 32x16 bits)
