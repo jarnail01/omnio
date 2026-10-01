@@ -40,8 +40,8 @@ Every instruction is `{opcode[3:0], delay[3:0], argument[7:0]}`. An instruction 
 |0010|`OE`|Set which pins are driven or released|8-bit mask|
 |0011|`LDI`|Load the transmit shift register|8-bit value|
 |0100|`LDX`|Load the loop counter|8-bit value|
-|0101|`OUT`|Shift out one bit onto a selected pin|3-bit value corresponding to pin 0 - 7|
-|0110|`IN`|Sample a selected pin into the receive shift register|3-bit value corresponding to pin 0 - 7|
+|0101|`OUT`|Shift out one bit onto a selected pin (LSB first)|3-bit value corresponding to pin 0 - 7|
+|0110|`IN`|Sample a selected pin into the receive shift register (LSB first)|3-bit value corresponding to pin 0 - 7|
 |0111|`WAIT`|Wait for a selected input pin to reach a specified level|[7] = level; [2:0] = pin|
 |1000|`JMP`|Jump to a program address|address 0 - 63|
 |1001|`DJNZ`|Decrement the loop counter, branch if it is nonzero|address 0 - 63|
