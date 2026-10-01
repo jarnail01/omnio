@@ -68,7 +68,7 @@
     </mxGraphModel>
   </diagram>
   <diagram name="high-level-v2" id="aLaTeCpGS8wRF3yDlE_x">
-    <mxGraphModel grid="1" page="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" pageScale="1" pageWidth="3840" pageHeight="2160" math="0" shadow="0">
+    <mxGraphModel dx="743" dy="1147" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="3840" pageHeight="2160" math="0" shadow="0">
       <root>
         <mxCell id="lA1HhylcjFrQQLSDLUFa-0" />
         <mxCell id="lA1HhylcjFrQQLSDLUFa-1" parent="lA1HhylcjFrQQLSDLUFa-0" />
@@ -106,7 +106,7 @@
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="lA1HhylcjFrQQLSDLUFa-45" parent="lA1HhylcjFrQQLSDLUFa-1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;rounded=0;fontFamily=Tahoma;spacing=2;fontStyle=1" value="PINS" vertex="1">
-          <mxGeometry height="30" width="82.5" x="796.25" y="250.01" as="geometry" />
+          <mxGeometry height="30" width="33.75" x="796.25" y="250.01" as="geometry" />
         </mxCell>
         <mxCell id="lA1HhylcjFrQQLSDLUFa-46" edge="1" parent="lA1HhylcjFrQQLSDLUFa-1" style="endArrow=classic;html=1;rounded=0;startArrow=classic;startFill=1;strokeWidth=2;" value="">
           <mxGeometry height="50" relative="1" width="50" as="geometry">
@@ -121,7 +121,7 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="lA1HhylcjFrQQLSDLUFa-48" parent="lA1HhylcjFrQQLSDLUFa-1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=right;verticalAlign=middle;rounded=0;fontFamily=Tahoma;spacing=2;fontStyle=1" value="CLK" vertex="1">
-          <mxGeometry height="30" width="55" x="250" y="150" as="geometry" />
+          <mxGeometry height="30" width="25" x="280" y="150" as="geometry" />
         </mxCell>
         <mxCell id="lA1HhylcjFrQQLSDLUFa-49" edge="1" parent="lA1HhylcjFrQQLSDLUFa-1" source="lA1HhylcjFrQQLSDLUFa-50" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=0.75;entryY=1;entryDx=0;entryDy=0;" target="lA1HhylcjFrQQLSDLUFa-42">
           <mxGeometry relative="1" as="geometry" />
