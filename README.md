@@ -32,8 +32,8 @@ Deadline: January 18, 2027. Target shuttle: March 2027 CMOS5L.
 - `asic`: ASIC flow configuration and constraints
 
 ## 📄 Instruction Set
-Opcode|Instruction|Operation|
-|-----|-----------|----------------------------------|
+|Opcode|Instruction|Operation|
+|:-----:|:-----------:|----------------------------------|
 |0000|`NOP`|No operation|
 |0001|`SET`|Write the output pin register|
 |0010|`OE`|Set which pins are driven or released|
