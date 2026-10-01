@@ -8,13 +8,13 @@ OMNIO is a programmable I/O ASIC specialized for emulating digital protocols suc
   <br>
 </div>
 
-The current microarchitecture plan (subject to change):
+**The current microarchitecture plan (subject to change):**
 - 4 independent cores
 - a shared memory array (at least 64x16 bits)
 - input/output FIFOs
 - fractional clock divider for slower protocols like UART
 
-Protocol Emulation Scope:
+**Protocol Emulation Scope:**
 - Targets: UART, SPI, and I2C
 - Stretch Goals: low-speed USB, 10Mbit Ethernet
 
