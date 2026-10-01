@@ -52,16 +52,6 @@ Every instruction is `{opcode[3:0], delay[3:0], argument[7:0]}`. An instruction 
 |1110|``||
 |1111|``||
 
-## 🗃️ Registers
-The following datapath registers keep track of data, loop counts, and how OMNIO reads from or drives its GPIO pins:
-| Register | Purpose |
-|:---:|---|
-| `X_REG` | Loop counter. `LDX` loads the count. |
-| `S_REG` | Serial transmit data. Holds data being shifted out through the configured output pin. |
-| `RX_REG` | Receive data. `IN` samples selected input pin(s) and places the captured value here. |
-| `OE_REG` | Output-enable. Controls whether each GPIO pin actively drives an output or not. |
-| `O_REG` | Output value. Holds the values driven onto pins when the corresponding `OE_REG` bit is enabled. |
-
 ### Example: UART Transmission
 This program transmits 0x96 on pin 0 using an 8N1 frame: one start bit, eight data bits sent LSB first, and one stop bit.
 ```
@@ -76,6 +66,16 @@ bit:
 SET 1 [15]    # Drive pin 1 high; wait 15 cycles (16 cycles total)
 HALT          # End of program
 ```
+
+## 🗃️ Registers
+The following datapath registers keep track of data, loop counts, and how OMNIO reads from or drives its GPIO pins:
+| Register | Purpose |
+|:---:|---|
+| `X_REG` | Loop counter. `LDX` loads the count. |
+| `S_REG` | Serial transmit data. Holds data being shifted out through the configured output pin. |
+| `RX_REG` | Receive data. `IN` samples selected input pin(s) and places the captured value here. |
+| `OE_REG` | Output-enable. Controls whether each GPIO pin actively drives an output or not. |
+| `O_REG` | Output value. Holds the values driven onto pins when the corresponding `OE_REG` bit is enabled. |
 
 ## ✔️ Verification and Testing
 An FPGA is being used to test the RTL before the ASIC flow. Currently exploring formal methods, random constrained tests, and AI-assisted verification.
