@@ -60,6 +60,10 @@ SET 1 [15]  # Drive pin 1 high; wait 15 cycles (16 cycles total)
 HALT  # End of program
 ```
 
+Datapath Registers:
+X_REG = loop counter
+
+
 ## ✔️ Verification and Testing
 An FPGA is being used to test the RTL before the ASIC flow. Currently exploring formal methods, random constrained tests, and AI-assisted verification.
 
