@@ -55,15 +55,15 @@ Every instruction is `{opcode[3:0], delay[3:0], argument[7:0]}`. An instruction 
 ### Example: UART Transmission
 This program transmits 0x96 on pin 0 using an 8N1 frame: one start bit, eight data bits sent LSB first, and one stop bit.
 ```
-SET 1         # Drive pin 1 high
-OE 1 [15]     # Make pin 1 an output; wait 15 cycles (16 cycles total)
+SET 1         # Drive PIN[0] high
+OE 1 [15]     # Configure PIN[0] as an output; wait 15 cycles (16 cycles total)
 LDI 0x96      # Load 0x96 into S_REG
 LDX 8         # Load 8 into X_REG
-SET 0 [15]    # Pull pin 1 low; wait 15 cycles (16 cycles total)
+SET 0 [15]    # Pull PIN[0] low; wait 15 cycles (16 cycles total)
 bit:
   OUT 0 [14]  # Output the next bit in S_REG 
   DJNZ bit    # Decrement X_REG; repeat until all 8 bits are sent
-SET 1 [15]    # Drive pin 1 high; wait 15 cycles (16 cycles total)
+SET 1 [15]    # Drive PIN[0] high; wait 15 cycles (16 cycles total)
 HALT          # End of program
 ```
 
