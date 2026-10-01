@@ -32,18 +32,24 @@ Deadline: January 18, 2027. Target shuttle: March 2027 CMOS5L.
 - `asic`: ASIC flow configuration and constraints
 
 ## 📄 Instruction Set
-|Instruction|Operation|
-|-----------|----------------------------------|
-|`SET`|Write the output pin register|
-|`OE`|Set which pins are driven or released|
-|`LDI`|Load the transmit shift register|
-|`OUT`|Shift out one bit onto a selected pin|
-|`LDX`|Load the loop counter|
-|`DJNZ`|Decrement the loop counter, branch if it is nonzero|
-|`IN`|Sample a selected pin into the receive shift register|
-|`WAIT`|Wait for a selected input pin to reach a specified level|
-|`JMP`|Jump to a program address|
-|`HALT`|Stop execution until reset|
+Opcode|Instruction|Operation|
+|-----|-----------|----------------------------------|
+|0000|`NOP`|No operation|
+|0001|`SET`|Write the output pin register|
+|0010|`OE`|Set which pins are driven or released|
+|0011|`LDI`|Load the transmit shift register|
+|0100|`LDX`|Load the loop counter|
+|0101|`OUT`|Shift out one bit onto a selected pin|
+|0110|`IN`|Sample a selected pin into the receive shift register|
+|0111|`WAIT`|Wait for a selected input pin to reach a specified level|
+|1000|`JMP`|Jump to a program address|
+|1001|`DJNZ`|Decrement the loop counter, branch if it is nonzero|
+|1010|``||
+|1011|``||
+|1100|`HALT`|Stop execution until reset|
+|1101|``||
+|1110|``||
+|1111|``||
 
 ```
 Datapath Registers:
