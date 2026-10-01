@@ -10,14 +10,13 @@ OMNIO is a programmable I/O ASIC specialized for emulating digital protocols suc
 
 The current microarchitecture plan (subject to change):
 - 4 independent cores
-- a shared memory array (at least 32x16 bits)
+- a shared memory array (at least 64x16 bits)
 - input/output FIFOs
-- fractional clock divider for slower protocols like UART with exact baud rates
+- fractional clock divider for slower protocols like UART
 
-The goal is to at least support the following protocols:
-- UART, SPI, and I2C
-- low-speed USB
-- 10Mbit Ethernet
+Protocol Emulation Scope:
+- Targets: UART, SPI, and I2C
+- Stretch Goals: low-speed USB, 10Mbit Ethernet
 
 This project is being developed for the [Jane Street Protocol Emulator ASIC Competition](https://blog.janestreet.com/protocol-emulator-asic-competition/), targeting Tiny Tapeout on IHP's 130 nm CMOS5L process.
 
@@ -53,7 +52,8 @@ Every instruction is `{opcode[3:0], delay[3:0], argument[7:0]}`. An instruction 
 |1111|``||
 
 ### Example: UART Transmission
-This program transmits 0x96 on pin 0 using an 8N1 frame: one start bit, eight data bits sent LSB first, and one stop bit.
+This program transmits 0x96 on pin 0 using an 8N1 frame: one start bit, eight data bits sent LSB first, and at least one stop bit before the line remains idle high. It should be noted that the arguments are decimal by default, but hexadecimal and binary may also be used. For example, `SET 1` is the same as `SET 0b00000001` or `SET 0x01`.
+
 ```
 SET 1         # Drive PIN[0] high
 OE 1 [15]     # Configure PIN[0] as an output; wait 15 cycles (16 cycles total)
@@ -78,7 +78,10 @@ The following datapath registers keep track of data, loop counts, and how OMNIO 
 | `O_REG` | Output value. Holds the values driven onto pins when the corresponding `OE_REG` bit is enabled. |
 
 ## ✔️ Verification and Testing
-An FPGA is being used to test the RTL before the ASIC flow. Currently exploring formal methods, random constrained tests, and AI-assisted verification.
+- SystemVerilog testbenches validate instruction execution and GPIO behavior.
+- Python tests validate assembler encoding.
+- FPGA testing is used to compare RTL behavior against physical I/O.
+- Planned: assertions, formal properties, and constrained-random testing.
 
 ## 🎯 Personal Learning Outcomes
 By the completion of this project, I should be able to:
