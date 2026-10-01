@@ -32,6 +32,7 @@ Deadline: January 18, 2027. Target shuttle: March 2027 CMOS5L.
 - `asic`: ASIC flow configuration and constraints
 
 ## 📄 Instruction Set
+Every instruction is `{opcode[3:0], delay[3:0], argument[7:0]}`. An instruction performs its action on a rising clock edge, then waits `delay` additional clock edges before the next instruction can execute. Thus, ordinary instructions take exactly `1 + delay` clock cycles. A taken branch costs the same as an untaken one.
 |Opcode|Instruction|Operation|Argument|
 |:-----:|:-----------:|----------------------------------|----------|
 |0000|`NOP`|No operation|0|
