@@ -45,6 +45,15 @@ Deadline: January 18, 2027. Target shuttle: March 2027 CMOS5L.
 |`JMP`|Jump to a program address|
 |`HALT`|Stop execution until reset|
 
+```
+Datapath Registers:
+X_REG = Loop counter. LDX loads count.
+S_REG = Serial data transmit. Holds data being shifted out through the configured output pin.
+RX_REG = Receive data. IN samples selected input pin(s) and places captured value here.
+OE_REG = Output-enable. Controls whether each GPIO pin actively drives an output or not.
+O_REG = Output value. Holds the values driven onto pins when OE_REG bit is enabled.
+```
+
 ### Example: UART Transmission
 This program transmits 0x96 on pin 0 using an 8N1 frame: one start bit, eight data bits sent LSB first, and one stop bit.
 ```
@@ -59,10 +68,6 @@ bit:
 SET 1 [15]  # Drive pin 1 high; wait 15 cycles (16 cycles total)
 HALT  # End of program
 ```
-
-Datapath Registers:
-X_REG = loop counter
-
 
 ## ✔️ Verification and Testing
 An FPGA is being used to test the RTL before the ASIC flow. Currently exploring formal methods, random constrained tests, and AI-assisted verification.
