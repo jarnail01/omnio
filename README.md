@@ -72,7 +72,7 @@ The following datapath registers keep track of data, loop counts, and how OMNIO 
 | Register | Purpose |
 |:---:|---|
 | `X_REG` | Loop counter. `LDX` loads the count. |
-| `S_REG` | Serial transmit data. Holds data being shifted out through the configured output pin. |
+| `S_REG` | Shift register. Holds data being shifted out through the configured output pin. |
 | `RX_REG` | Receive data. `IN` samples selected input pin(s) and places the captured value here. |
 | `OE_REG` | Output-enable. Controls whether each GPIO pin actively drives an output or not. |
 | `O_REG` | Output value. Holds the values driven onto pins when the corresponding `OE_REG` bit is enabled. |
